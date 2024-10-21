@@ -9,9 +9,6 @@ menu.addEventListener("click", () => {
 });
 
 
-
-
-
 // change bg color
 
 function changeBg() {
