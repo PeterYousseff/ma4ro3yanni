@@ -223,7 +223,7 @@ nav .menu.active span:nth-child(2) {
 
 /* intro section */
 .introSec {
-  background-image: url("../image/intro.png");
+  background-image: url("../image/intro.jpg");
   background-size: cover;
   background-position: center;
 }
