@@ -1066,7 +1066,7 @@ nav .menu.active span:nth-child(2) {
 /* intro section */
 
 .introSec {
-  background-image: url("../image/intro.jpg");
+  background-image: url("https://i.ibb.co/9GyYRSG/intro.jpg");
   background-size: cover;
   background-position: center;
 }
