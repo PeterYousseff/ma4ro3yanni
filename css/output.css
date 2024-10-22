@@ -770,6 +770,11 @@ video {
   line-height: 1;
 }
 
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -1097,6 +1102,118 @@ nav .menu.active span:nth-child(2) {
   }
 }
 
+/* members slider */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* Default height */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 300px;
+  /* Fixed width for consistency */
+}
+
+.swiper-slide:hover .card {
+  transform: scale(1.05);
+  /* Scale up on hover */
+}
+
+/* Navigation Button Styles */
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--main-clr);
+  /* Change color of buttons */
+  font-size: 15px !important;
+  /* Increase button size */
+  transition: color 0.3s;
+  /* Transition for hover effect */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: var(--main-clr);
+  /* Change color on hover */
+}
+
+/* Pagination Styles */
+
+.swiper-pagination {
+  bottom: 0px !important;
+  /* Position at the bottom */
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  /* Bullet color */
+  opacity: 0.5;
+  /* Default opacity */
+  width: 10px;
+  /* Bullet width */
+  height: 10px;
+  /* Bullet height */
+  border-radius: 50%;
+  /* Make it circular */
+  margin: 0 5px;
+  /* Spacing between bullets */
+  transition: opacity 0.3s;
+  /* Transition for hover effect */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  /* Full opacity for active bullet */
+  background: var(--main-clr);
+  /* Color for active bullet */
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    height: 100%;
+    /* Adjust height for smaller screens */
+  }
+
+  .card {
+    width: 300px;
+    /* Adjust card width */
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 100%;
+    /* Further adjust height for mobile */
+  }
+
+  .card {
+    width: 300px;
+    /* Further adjust card width */
+  }
+}
+
+/* members slider */
+
+/* members page */
+
+.membersIntro {
+  height: 100vb;
+  background-image: url("https://i.ibb.co/xq8kWnZ/members-Intro.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* members page */
+
 .hover\:text-gold:hover {
   --tw-text-opacity: 1;
   color: rgb(206 146 50 / var(--tw-text-opacity));
@@ -1115,6 +1232,51 @@ nav .menu.active span:nth-child(2) {
 @media not all and (min-width: 1024px) {
   .max-lg\:w-40 {
     width: 10rem;
+  }
+
+  .max-lg\:w-full {
+    width: 100%;
+  }
+
+  .max-lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-lg\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .max-lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .max-lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .max-lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

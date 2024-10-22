@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/input.css">
   <link rel="stylesheet" href="./css/output.css">
   <!-- google fonts -->
@@ -11,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <!-- members slider -->
   <title>مشروع يني</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
   <section id="home">
     <div class="introSec w-full h-screen zoom">
       <div class="text w-full h-full flex justify-center items-center relative">
-        <h1 class="text-9xl text-gold font-bold">مـشــروع ينـــي</h1>
+        <h1 class="text-9xl text-gold font-bold max-lg:text-7xl max-sm:text-5xl">مـشــروع ينـــي</h1>
         <div class="animation absolute bottom-10">
           <a href="#about" class="">
             <i class="goDownArrow fa-solid fa-angles-down text-gold text-4xl "></i>
@@ -65,30 +66,30 @@
 
 
 <!-- about section -->
-<section id="about" class=" p-20">
+<section id="about" class=" py-20">
   <div class="aboutSec my-container text-center">
-    <h2 class="text-7xl font-bold text-gold mb-10">About Us</h2>
-    <p class="text-3xl mb-4 text-center leading-relaxed">Mashroo3 Yanni was established by a team of professionals and amateurs, under the leadership of the Singer and Maestro / Abanoub Yanni. We present various styles and forms of songs from different times, with new harmonic and polyphonic melodic arrangements, in addition to producing songs created by us as a team, which it all aims to elevate the cultural taste, and open up to new musical ideas through the diversity of musical and artistic content.</p>
+    <h2 class="text-7xl font-bold text-gold mb-10 max-md:text-5xl">About Us</h2>
+    <p class="text-3xl mb-4 text-center leading-relaxed max-md:text-2xl"><span class="font-bold">Mashroo3 Yanni</span> was established by a team of professionals and amateurs, under the leadership of the Singer and Maestro / Abanoub Yanni. We present various styles and forms of songs from different times, with new harmonic and polyphonic melodic arrangements, in addition to producing songs created by us as a team, which it all aims to elevate the cultural taste, and open up to new musical ideas through the diversity of musical and artistic content.</p>
   </div>
 </section>
 <!-- end about section -->
 
 <!-- instructor section -->
-  <section class="bg-light  p-20">
+  <section class="bg-light  py-20">
     <div class="my-container">
       <div class="mb-6 text-center">
-        <h2 class="text-gold font-bold text-7xl">Who is Yanni</h2>
+        <h2 class="text-gold font-bold text-7xl max-md:text-5xl">Who is Yanni</h2>
         <p class="text-lg">Conductor - Composer</p>
       </div>
-      <div class="instBox h-full  flex gap-4   ">
-      <div class="text w-2/3">
+      <div class="instBox h-full flex gap-4 max-lg:flex-col-reverse">
+      <div class="text w-2/3 max-lg:w-full">
         <p class="text-2xl leading-relaxed mb-6">
           Abanoub Yanni.. He obtained a Bachelor of Music Education with honors.. He started learning at the age of 10, and began teaching him to play the instrument at the age of 16. He was imitated in the East by Professor Dr. (Mohamed Ashraf), Professor of Music Education in Helwan, then trained in the West with Professor (Gabriela Buda) in Debrecen, Hungary, then studied conducting the choir with the opera singer and maestro (Yannis Ben Abdullah), then he developed his musical skills by studying musical composition at the Conservatory Music Institute through listening lectures.</p>
         <p class="text-2xl leading-relaxed mb-6">
           Abanoub Yanni is an Egyptian composer who has won several awards and certificates of appreciation for composing music for a large number of plays and feature films, most notably: "Wahm Kotar", "Lavender", and most recently "Terkat Jawhar" in 2023. Abanoub Yanni is also the founder of Doo Studio for recording, filming, and content creation in general. He is interested in studying psychology, cognitive behavioral therapy, behavior modification, and activities through his work within the Helwan Mental Health Hospital to integrate psychotherapy with art. Abanoub Yanni has taught a very large number of students in various fields and workshops in the artistic and psychological fields inside and outside Egypt.</p>
           <a href="https://abanoubyanni.com" target="_blank" class="font-bold text-gold text-4xl">Know More...</a>
       </div>
-      <div class="image w-1/3">
+      <div class="image w-1/3 max-lg:w-full">
         <img src="./image/instructor.jpg" alt="">
       </div>
     </div>
@@ -97,14 +98,357 @@
 <!-- end instructor section -->
 
 
+
+
+<!-- members slider -->
+  <section class=" py-20">
+    <div class="my-container ">
+      <h1 class="text-8xl text-gold font-bold text-center mb-10 max-md:text-5xl">Members</h1>
+      <div class="">
+
+
+
+        
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/01.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/02.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/03.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/04.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/05.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/06.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/07.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/08.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/09.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/10.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/11.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/12.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/13.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/14.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/15.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/16.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/17.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/18.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                  <!-- member -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                          <div>
+                            <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                              <img class="object-cover w-full h-full  " src="./image/team-members/19.jpg" alt="Person" />
+                              <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-gold bg-opacity-75 opacity-0 hover:opacity-100">
+                                <p class="mb-1 text-lg font-bold text-gray-100">**********</p>
+                                <p class="mb-4 text-xs text-gray-100">***********</p>
+                              </div>
+                            </div>
+                            <h2 class="text-center text-2xl font-bold">***********</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- member -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+
+<!-- members slider -->
+
+
+
+
+
+
+
+
+
+
 <footer class="bg-dark p-20 border-t-4 border-t-gold">
   <div class="my-container">
-    <div class="links flex w-full justify-between">
-      <div class="logo flex justify-center w-1/3">
+    <div class="links flex w-full justify-between max-lg:flex-col max-lg:gap-10">
+      <div class="logo flex justify-center w-1/3 max-lg:w-full">
         <img src="./image/ma4r3yanni-logo.png" alt="" class="">
       </div>
-      <div class="w-1/3">
-        <h3 class="text-center font-bold text-gold text-4xl mb-8">Usefully Links</h3>
+      <div class="w-1/3 max-lg:w-full">
+        <h3 class="text-center font-bold text-gold text-4xl mb-8 max-lg:text-3xl">Usefully Links</h3>
         <div class="links flex gap-6 justify-center ">
           <a href="#"><i class="fa-brands fa-fw fa-facebook text-light duration-300 hover:text-gold text-3xl "></i></a>
           <a href="#"><i class="fa-brands fa-fw fa-instagram text-light duration-300 hover:text-gold text-3xl "></i></a>
@@ -112,8 +456,8 @@
           <a href="#"><i class="fa-regular fa-fw fa-envelope text-light duration-300 hover:text-gold text-3xl "></i></a>
         </div>
       </div>
-      <div class="w-1/3">
-        <h3 class="text-center font-bold text-gold text-4xl mb-6">Get In Touch</h3>
+      <div class="w-1/3 max-lg:w-full">
+        <h3 class="text-center font-bold text-gold text-4xl mb-6 max-lg:text-3xl">Get In Touch</h3>
         <div class="links flex flex-col gap-4 justify-center">
           <div class="text-center">
             <div class="">
@@ -129,6 +473,7 @@
   </div>
 </footer>
 
+<!-- navbar -->
 <script>
   const navigation = document.getElementById("nav");
 const menu = document.getElementById("menu");
@@ -165,6 +510,52 @@ window.addEventListener("scroll", changeBg);
   });
 
 </script>
+<!-- navbar -->
 
+<!-- members slider -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1, // Default to 4 cards at a time
+        spaceBetween: 10, // Space between slides
+        autoplay: {
+            delay: 1000, // Delay between slide transitions
+            disableOnInteraction: false, // Allow autoplay to continue after user interaction
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3, // Show 2 cards on medium screens
+                spaceBetween: 10,
+            },
+            480: {
+                slidesPerView: 1, // Show 1 card on small screens
+                spaceBetween: 10,
+            }
+        }
+    });
+
+    // Stop autoplay on hover
+    const slides = document.querySelectorAll('.swiper-slide');
+
+    slides.forEach(slide => {
+        slide.addEventListener('mouseenter', () => {
+            swiper.autoplay.stop();
+        });
+        slide.addEventListener('mouseleave', () => {
+            swiper.autoplay.start();
+        });
+    });
+</script>
+<!-- members slider -->
 </body>
 </html>
