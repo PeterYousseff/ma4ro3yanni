@@ -586,12 +586,17 @@ video {
   z-index: 50;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {
@@ -604,6 +609,14 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -630,6 +643,10 @@ video {
   width: 33.333333%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -640,6 +657,11 @@ video {
 
 .w-56 {
   width: 14rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -666,6 +688,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -690,8 +716,21 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-t-4 {
   border-top-width: 4px;
+}
+
+.border-gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(206 146 50 / var(--tw-border-opacity));
 }
 
 .border-t-gold {
@@ -727,13 +766,25 @@ video {
   padding: 0.5rem;
 }
 
+.p-2\.5 {
+  padding: 0.625rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-20 {
@@ -741,9 +792,13 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -785,9 +840,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -818,6 +878,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -834,6 +899,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 * {
@@ -1212,11 +1281,39 @@ nav .menu.active span:nth-child(2) {
   background-position: center;
 }
 
+.write-m {
+  writing-mode: vertical-lr;
+  -webkit-text-stroke : 3px var(--nav-bg);
+  color: transparent;
+  font-size: 150px;
+}
+
 /* members page */
+
+/* about page */
+
+.aboutIntro {
+  height: 100vb;
+  background-image: url("https://i.ibb.co/WFmxCPb/about-intro.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* about page */
+
+.hover\:bg-gold:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 146 50 / var(--tw-bg-opacity));
+}
 
 .hover\:text-gold:hover {
   --tw-text-opacity: 1;
   color: rgb(206 146 50 / var(--tw-text-opacity));
+}
+
+.hover\:text-light:hover {
+  --tw-text-opacity: 1;
+  color: rgb(240 235 220 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
@@ -1227,6 +1324,27 @@ nav .menu.active span:nth-child(2) {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:placeholder\:opacity-0:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.focus\:placeholder\:opacity-0:focus::placeholder {
+  opacity: 0;
+}
+
+.focus\:placeholder\:duration-500:focus::-moz-placeholder {
+  transition-duration: 500ms;
+}
+
+.focus\:placeholder\:duration-500:focus::placeholder {
+  transition-duration: 500ms;
+}
+
+.group:hover .group-hover\:text-gold {
+  --tw-text-opacity: 1;
+  color: rgb(206 146 50 / var(--tw-text-opacity));
 }
 
 @media not all and (min-width: 1024px) {

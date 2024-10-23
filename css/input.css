@@ -331,4 +331,21 @@ nav .menu.active span:nth-child(2) {
   background-size: cover;
   background-position: center;
 }
+
+.write-m {
+  writing-mode: vertical-lr;
+  -webkit-text-stroke : 3px var(--nav-bg);
+  color: transparent;
+  font-size: 150px;
+}
+
 /* members page */
+
+/* about page */
+.aboutIntro {
+  height: 100vb;
+  background-image: url("https://i.ibb.co/WFmxCPb/about-intro.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* about page */
