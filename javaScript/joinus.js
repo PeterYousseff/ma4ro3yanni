@@ -11,9 +11,9 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-var contactFormDB = firebase.database().ref("mashro3YanniContactUs");
+var contactFormDB = firebase.database().ref("mashro3YanniJoinUs");
 
-document.getElementById("mashro3YanniContactUs").addEventListener("submit", submitForm);
+document.getElementById("mashro3YanniJoinUs").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();

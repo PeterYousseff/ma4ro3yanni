@@ -62,40 +62,34 @@
   <div class="my-container contact-us  flex max-lg:flex-col-reverse">
     
     <div class="sendMessage w-full p-6   ">
-      <div class="form-container ">
-        <form id="contact-Form" class="contact-Form felx flex-col items-center justify-center duration-500">
+      <div class=" ">
+        <form action="" id="mashro3YanniJoinUs" class="contact-Form felx flex-col items-center justify-center duration-500">
           <!-- name -->
           <label  for="name" class="text-gold text-2xl font-bold mt-4 mb-2 block">Your Name:</label>
           <input  type="text" id="name"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Name" >
           
           <!-- email -->
-          <label  class="text-gold text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
+          <label  for="email" class="text-gold text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
           <input  type="email" id="email"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
           
           <!-- subject -->
-          <label  for="" class="text-gold text-2xl font-bold mt-4 mb-2 block">:</label>
-          <input  type="text" id=""  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
+          <label  for="subject" class="text-gold text-2xl font-bold mt-4 mb-2 block">subject:</label>
+          <input  type="text" id="subject"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
           
 
-          <label  for="" class="text-gold text-2xl font-bold mt-4 mb-2 block">:</label>
-          <textarea  id=""  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
+          <label  for="message" class="text-gold text-2xl font-bold mt-4 mb-2 block">Message:</label>
+          <textarea  id="message"  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
           
-          <!-- select -->
-          <label  for="message" class="text-gold text-2xl font-bold mt-4 mb-2 block">your voice type:</label>
-          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option selected>voice type</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+
+
+          <label  for="select" class="text-gold text-2xl font-bold mt-4 mb-2 block">your voice type:</label>
+          <select id="select" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light  ">
+            <option value="option1" class="text-gold font-bold ">option1</option>
+            <option value="option2" class="text-gold font-bold ">option2</option>
+            <option value="option3" class="text-gold font-bold ">option3</option>
           </select>
-
-
-
-
-
-          <input  type="submit" value="Send Message" class="submit w-full mt-4 block border border-gold bg-light text-3xl font-bold bg-mainWhite p-3  hover:text-light hover:bg-gold duration-300">
+          
+          <input  type="submit"  class="submit w-full mt-4 block border border-gold bg-light text-3xl font-bold bg-mainWhite p-3  hover:text-light hover:bg-gold duration-300">
         </form> 
       </div>
     </div>
@@ -179,6 +173,7 @@
     });
   
   </script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./javaScript/joinus.js"></script>
 </body>
 </html>
