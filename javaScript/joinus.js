@@ -20,13 +20,19 @@ function submitForm(e) {
 
   var name = getElementVal("name");
   var email = getElementVal("email");
-  var subject = getElementVal("subject");
-  var message = getElementVal("message");
+  var date = getElementVal("date-picker");
+  var address = getElementVal("address"); 
+  var education = getElementVal("education"); 
+  var phoneInput = getElementVal("phoneInput"); 
+  var voiceType = getElementVal("voiceType"); 
+  var HaveYouPreviouslySungInAChoir = getElementVal("HaveYouPreviouslySungInAChoir"); 
+  var HaveYouTakenOrAreYouTakingAnyVoiceLessons = getElementVal("HaveYouTakenOrAreYouTakingAnyVoiceLessons"); 
+  var DoYouPlayAnyInstruments = getElementVal("DoYouPlayAnyInstruments"); 
 
-  saveMessage(name, email, subject, message);
+  saveMessage(name, email,date,address,education,phoneInput,voiceType,HaveYouPreviouslySungInAChoir,HaveYouTakenOrAreYouTakingAnyVoiceLessons,DoYouPlayAnyInstruments);
 }
 
-const saveMessage = (name, email, subject, message) => {
+const saveMessage = (name, email,date,address,education,phoneInput,voiceType,HaveYouPreviouslySungInAChoir,HaveYouTakenOrAreYouTakingAnyVoiceLessons,DoYouPlayAnyInstruments) => {
   var newContactForm = contactFormDB.push();
 
   // Get formatted date and time
@@ -35,9 +41,15 @@ const saveMessage = (name, email, subject, message) => {
   newContactForm.set({
     name: name,
     email: email,
-    subject: subject,
-    message: message,
-    timestamp: timestamp, // Add formatted timestamp here
+    date: date, 
+    address:address,
+    education:education,
+    phoneInput:phoneInput,
+    voiceType:voiceType,
+    HaveYouPreviouslySungInAChoir:HaveYouPreviouslySungInAChoir,
+    HaveYouTakenOrAreYouTakingAnyVoiceLessons:HaveYouTakenOrAreYouTakingAnyVoiceLessons,
+    DoYouPlayAnyInstruments:DoYouPlayAnyInstruments,
+    timestamp:timestamp,
   })
   .then(() => {
     // Show success alert

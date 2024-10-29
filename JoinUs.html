@@ -12,12 +12,15 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <title>About</title>
 </head>
 <body>
 
 <!-- navbar -->
-<nav class="navbar z-50" id="navbar">
+<nav class="navbar z-50 bg-light" id="navbar">
   <div class="logo p-2">
     <a href="./index.html" class="logo">
       <img src="./image/ma4r3yanni-logo.png" class="w-56 max-lg:w-40" alt="">
@@ -25,12 +28,12 @@
   </div>
   <div class="links">
     <ul id="nav">
-      <li><a href="./index.html" class="textC text-2xl font-bold hover:text-gold duration-300">Home</a></li>
-      <li><a href="./about.html" class="textC text-2xl font-bold hover:text-gold duration-300">About</a></li>
-      <li><a href="./Concerts.html" class="textC text-2xl font-bold hover:text-gold duration-300">Concerts</a></li>
-      <li><a href="./Contact us.html" class="textC text-2xl font-bold hover:text-gold duration-300">Contact us</a></li>
-      <li><a href="./Join us.html" class="textC text-2xl font-bold hover:text-gold duration-300">Join us</a></li>
-      <li><a href="./Members.html" class="textC text-2xl font-bold hover:text-gold duration-300">Members</a></li>
+      <li><a href="./index.html" class="textC text-2xl font-bold text-dark hover:text-gold duration-300">Home</a></li>
+      <li><a href="./about.html" class="textC text-2xl font-bold text-dark hover:text-gold duration-300">About</a></li>
+      <li><a href="./Concerts.html" class="textC text-2xl font-bold text-dark hover:text-gold duration-300">Concerts</a></li>
+      <li><a href="./Contact us.html" class="textC text-2xl font-bold text-dark hover:text-gold duration-300">Contact us</a></li>
+      <li><a href="./Join us.html" class="textC text-2xl font-bold text-gold hover:text-gold duration-300 active">Join us</a></li>
+      <li><a href="./Members.html" class="textC text-2xl font-bold text-dark hover:text-gold duration-300">Members</a></li>
     </ul>
   </div>
   <div class="menu" id="menu">
@@ -42,20 +45,13 @@
 <!-- end navbar -->
 
 <!-- intro about -->
-<section class="h-screen">
+<section class="h-96 max-lg:h-56">
   <div class="my-container w-full h-full">
-    <div class="flex justify-center items-center h-full">
-      <h1 class="text-9xl font-bold text-gold">Join us</h1>
+    <div class="flex justify-center items-center max-lg:items-end h-full">
+      <h1 class="text-9xl font-bold text-gold max-lg:text-5xl">Join Us</h1>
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
 
 
 <section>
@@ -65,30 +61,123 @@
       <div class=" ">
         <form action="" id="mashro3YanniJoinUs" class="contact-Form felx flex-col items-center justify-center duration-500">
           <!-- name -->
-          <label  for="name" class="text-gold text-2xl font-bold mt-4 mb-2 block">Your Name:</label>
+          <label  for="name" class="text-gold text-2xl font-bold mt-4 mb-2 block">Name:</label>
           <input  type="text" id="name"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Name" >
           
           <!-- email -->
-          <label  for="email" class="text-gold text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
+          <label  for="email" class="text-gold text-2xl font-bold mt-4 mb-2 block">Email:</label>
           <input  type="email" id="email"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
           
-          <!-- subject -->
-          <label  for="subject" class="text-gold text-2xl font-bold mt-4 mb-2 block">subject:</label>
-          <input  type="text" id="subject"  required class="w-full py-3 px-2 outline-none border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
+          <!-- date of birth -->
+          <p class="text-gold text-2xl font-bold mt-4  block">Date Or Birth</p>
+          <div class="relative h-10 w-full min-w-[200px] my-6">
+            <input
+              id="date-picker"
+              class="peer h-full w-full rounded-[7px] border border-gold border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gold focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+              placeholder=" "
+            />
+            <label class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-2xl font-normal leading-tight text-gold transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-gold before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+              Select a Date
+            </label>
+          </div>
+          <script>
+            const datepicker = flatpickr("#date-picker", {});
+           
+            // styling the date picker
+            const calendarContainer = datepicker.calendarContainer;
+            const calendarMonthNav = datepicker.monthNav;
+            const calendarNextMonthNav = datepicker.nextMonthNav;
+            const calendarPrevMonthNav = datepicker.prevMonthNav;
+            const calendarDaysContainer = datepicker.daysContainer;
+           
+            calendarContainer.className = `${calendarContainer.className} bg-white p-4 border border-blue-gray-50 rounded-lg shadow-lg shadow-blue-gray-500/10 font-sans text-sm font-normal text-blue-gray-500 focus:outline-none break-words whitespace-normal`;
+           
+            calendarMonthNav.className = `${calendarMonthNav.className} flex items-center justify-between mb-4 [&>div.flatpickr-month]:-translate-y-3`;
+           
+            calendarNextMonthNav.className = `${calendarNextMonthNav.className} absolute !top-2.5 !right-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
+           
+            calendarPrevMonthNav.className = `${calendarPrevMonthNav.className} absolute !top-2.5 !left-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
+           
+            calendarDaysContainer.className = `${calendarDaysContainer.className} [&_span.flatpickr-day]:!rounded-md [&_span.flatpickr-day.selected]:!bg-gray-900 [&_span.flatpickr-day.selected]:!border-gray-900`;
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+          <!-- home address -->
+          <label  for="address" class="text-gold text-2xl font-bold mt-4 mb-2 block">Home address:</label>
+          <textarea  id="address"  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
           
+          <!-- education history -->
+          <label  for="education" class="text-gold text-2xl font-bold mt-4 mb-2 block">Education history:</label>
+          <textarea  id="education"  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
 
-          <label  for="message" class="text-gold text-2xl font-bold mt-4 mb-2 block">Message:</label>
-          <textarea  id="message"  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
-          
+          <!-- phone number -->
+          <label for="phoneInput" class="text-gold text-2xl font-bold mt-4 mb-2 block">Phone number (whatsapp) :</label>
+          <div class="relative">
+              <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                <i class="fa-solid fa-phone text-gold"></i>
+              </div>
+              <input type="text" id="phoneInput" aria-describedby="helper-text-explanation" class=" border  text-gray-900 text-sm rounded-lg block w-full outline-none py-3 px-2  border-gold bg-light ps-10 p-2.5  focus:placeholder:opacity-0 focus:placeholder:duration-500"  placeholder="phone number" required />
+          </div>
 
-
-          <label  for="select" class="text-gold text-2xl font-bold mt-4 mb-2 block">your voice type:</label>
-          <select id="select" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light  ">
-            <option value="option1" class="text-gold font-bold ">option1</option>
-            <option value="option2" class="text-gold font-bold ">option2</option>
-            <option value="option3" class="text-gold font-bold ">option3</option>
+          <!-- voice-type -->
+          <label  for="voiceType" class="text-gold text-2xl font-bold mt-4 mb-2 block">your voice type:</label>
+          <select id="voiceType" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light">
+            <option class="text-gold font-bold "></option>
+            <option value="Sopranos" class="text-gold font-bold ">Sopranos</option>
+            <option value="Mezzo-soprano" class="text-gold font-bold ">Mezzo-soprano</option>
+            <option value="Alto" class="text-gold font-bold ">Alto</option>
+            <option value="Tenor" class="text-gold font-bold ">Tenor</option> 
+            <option value="Baritone" class="text-gold font-bold ">Baritone</option> 
           </select>
           
+          <!-- Have-you-previously-sung-in-a-choir -->
+          <label  for="HaveYouPreviouslySungInAChoir" class="text-gold text-2xl font-bold mt-4 mb-2 block">Have you previously sung in a choir?</label>
+          <select id="HaveYouPreviouslySungInAChoir" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light">
+            <option class="text-gold font-bold "></option>
+            <option value="Yes" class="text-gold font-bold">Yes</option>
+            <option value="No" class="text-gold font-bold">No</option>
+          </select>
+          
+          <!-- Have-you-taken-or-are-you-taking-any-voice-lessons -->
+          <label  for="HaveYouTakenOrAreYouTakingAnyVoiceLessons" class="text-gold text-2xl font-bold mt-4 mb-2 block">Have you taken or are you taking any voice lessons?</label>
+          <select id="HaveYouTakenOrAreYouTakingAnyVoiceLessons" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light">
+            <option class="text-gold font-bold "></option>
+            <option value="Yes" class="text-gold font-bold ">Yes</option>
+            <option value="No" class="text-gold font-bold ">No</option>
+          </select>
+          
+          <!-- Do-you-play-any-instruments -->
+          <label  for="DoYouPlayAnyInstruments" class="text-gold text-2xl font-bold mt-4 mb-2 block">Do you play any instruments?</label>
+          <select id="DoYouPlayAnyInstruments" class="text-gold font-bold w-full outline-none py-2 px-2 border border-gold bg-light">
+            <option class="text-gold font-bold "></option>
+            <option value="Yes" class="text-gold font-bold ">Yes</option>
+            <option value="No" class="text-gold font-bold ">No</option>
+          </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--           
+          <label  for="message" class="text-gold text-2xl font-bold mt-4 mb-2 block">Message:</label>
+          <textarea  id="message"  rows="4" required class="w-full outline-none py-3 px-2 border border-gold bg-light focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
+          -->  
+          <!-- submit -->
           <input  type="submit"  class="submit w-full mt-4 block border border-gold bg-light text-3xl font-bold bg-mainWhite p-3  hover:text-light hover:bg-gold duration-300">
         </form> 
       </div>
@@ -114,10 +203,10 @@
         <div class="w-1/3 max-lg:w-full">
           <h3 class="text-center font-bold text-gold text-4xl mb-8 max-lg:text-3xl">Usefully Links</h3>
           <div class="links flex gap-6 justify-center ">
-            <a href="#"><i class="fa-brands fa-fw fa-facebook text-light duration-300 hover:text-gold text-3xl "></i></a>
-            <a href="#"><i class="fa-brands fa-fw fa-instagram text-light duration-300 hover:text-gold text-3xl "></i></a>
-            <a href="#"><i class="fa-brands fa-fw fa-tiktok text-light duration-300 hover:text-gold text-3xl "></i></a>
-            <a href="#"><i class="fa-regular fa-fw fa-envelope text-light duration-300 hover:text-gold text-3xl "></i></a>
+            <a href="https://www.facebook.com/p/mashro3-yanni-مشروع-يني-61567035602857/" target="_blank"><i class="fa-brands fa-fw fa-facebook text-light duration-300 hover:text-gold text-3xl "></i></a>
+            <a href="https://www.instagram.com/mashro3_yanni?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-fw fa-instagram text-light duration-300 hover:text-gold text-3xl "></i></a>
+            <a href="https://www.tiktok.com/@mashro3_yanni?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-fw fa-tiktok text-light duration-300 hover:text-gold text-3xl "></i></a>
+            <!-- <a href="#"><i class="fa-regular fa-fw fa-envelope text-light duration-300 hover:text-gold text-3xl "></i></a> -->
           </div>
         </div>
         <div class="w-1/3 max-lg:w-full">
@@ -125,10 +214,10 @@
           <div class="links flex flex-col gap-4 justify-center">
             <div class="text-center">
               <div class="">
-                <a href="#" class="text-center text-light text-2xl hover:text-gold duration-300 ">Contact us</a>
+                <a href="./ContactUs.html" class="text-center text-light text-2xl hover:text-gold duration-300 ">Contact us</a>
               </div>
               <div class="">
-                <a href="#" class="text-center text-light text-2xl hover:text-gold duration-300 ">Join us</a>
+                <a href="./JoinUs.html" class="text-center text-light text-2xl hover:text-gold duration-300 ">Join us</a>
               </div>
               </div>
           </div>
@@ -175,5 +264,8 @@
   </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./javaScript/joinus.js"></script>
+
+
+
 </body>
 </html>
